@@ -5,8 +5,6 @@
     editor = nvim
 [commit]
     gpgSing = true
-[url "git@github.com"]
-    insteadOf = https://github.com/
 [alias]
     s = status
     b = branch -l
