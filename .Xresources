@@ -10,7 +10,7 @@ st.utmp:    tmux
 st.borderless:       1 
 
 ! --- The following options options can be reloaded via USR1 signal. ---
-st.font:             Mononoki Nerd Font:pixelsize=14:fontsize=12;
+st.font:              Fantasque Sans Mono:size=12:style=bold:autohint=true;
 
 ! window padding
 st.borderpx:          30
@@ -27,8 +27,8 @@ st.cursorblinkstyle:  1
 st.cursorblinkontype: 1
 
 st.disablebold:         0
-st.disableitalics:         0
-st.disableroman:         0
+st.disableitalics:      0
+st.disableroman:        0
 
 ! Amount of lines scrolled
 st.scrollrate:  3
@@ -62,8 +62,8 @@ st.depth: 0
 
 ! opacity==255 means what terminal will be not transparent, 0 - fully transparent
 ! (float values in range 0 to 1.0 may also be used)
-st.opacity:    222 
-st.disable_alpha_correction: 0
+st.opacity:             222 
+st.disable_alpha_correction: 1
 
 ! undercurl style. either 1, 2 or 3 (0 disables)
 !
