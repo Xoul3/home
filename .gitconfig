@@ -1,6 +1,3 @@
-[user]
-	email = pryfisi@gmail.com
-	name = Paster
 [core]
     editor = nvim
 [commit]
