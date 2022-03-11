@@ -1,8 +1,29 @@
+[color]
+	ui = auto
+
+[color "branch"]
+	current = green bold
+	local = white
+	remote = white dim
+
+[color "diff"]
+  	meta = magenta bold
+	frag = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = green bold
+	changed = red bold
+	untracked = yellow bold
 [core]
-    editor = nvim
+    	editor = nvim
+
 [commit]
-    gpgSing = true
+    	gpgSing = true
+
 [alias]
-    s = status
-    b = branch -l
-    res = remote -v
+    	s = status
+	b = branch -l
+     	res = remote -v
