@@ -3,7 +3,6 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export FZF_BASE=/path/to/fzf/install/dir
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -12,7 +11,7 @@ export FZF_BASE=/path/to/fzf/install/dir
 
 ZSH_THEME="bureau"
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git adb docker ruby fzf npm perl zsh-syntax-highlighting zsh-autosuggestions zsh-completions docker docker-compose docker-machine sudo golang gh rust node python rails tmux z vi-mode yarn git-flow)
+plugins=(git adb docker ruby npm perl zsh-syntax-highlighting zsh-autosuggestions zsh-completions docker docker-compose docker-machine sudo golang gh rust node python rails tmux z vi-mode yarn git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,6 +26,9 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 export EDITOR='nvim'
 export VISUAL='nvim'
+export TERMINAL='st'
+export READER='zathura'
+export BROWSER='min'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -40,4 +42,7 @@ alias top="htop"
 alias n="\nvim"
 alias e="ranger"
 alias rm="rm -dfr"
-alias cdb="cd .."
+alias cfgi3="n ~/.config/i3/config"
+alias cfgpbar="n ~/.config/polybar/config.ini"
+alias cfgbsp="n ~/.config/bspwm/bspwmrc"
+alias p="feh"

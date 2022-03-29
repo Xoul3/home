@@ -1,3 +1,5 @@
 # .dfiles (Dotfiles)
 ## in Plan
-1. make installer
+make installer <br>
+Distros: <br>
+> Debian based, Arch based, Void, Nix.
