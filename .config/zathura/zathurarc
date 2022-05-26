@@ -1,6 +1,28 @@
 set selection-clipboard clipboard
 set recolor true
 
+map r reload
+map p print
+map i recolor
+map J zoom out
+map K zoom in 
+map R rotate
+unmup f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+# zoon settings
+set zoom-min 10
+set guioptions ""
+
+# stop page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+set pages-per-row 1
+
+set adjust-open "best-fit"
 # theme catppuccin
 
 set default-fg 			    "#d9e0ee"

@@ -2,7 +2,7 @@
 set $mod Mod4
 
 #workspaces
-assign [class="alacritty"]1
+assign [class="st"]1
 assign [class="firefox"]3
 assign [class="discord"]4
 assign [title="Telegram"]4

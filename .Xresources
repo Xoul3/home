@@ -1,8 +1,61 @@
-# Xft
-Xft.dpi:99
+! Xft
+Xft.dpi:89
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
+
+! URxvt 
+URxvt.scrollbar: false
+URxvt.jumpscroll: true
+URxvt.skipscroll: true
+URxvt.scrollttyoutput: false 
+URxvt.scrollwithbuffer: false
+URxvt.scrollttykeypress: true
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.internalborder: 3
+URxvt.externalborder: 3
+
+URxvt.loginshell: true
+URxvt.savelines: 4096
+URxvt.mousewheelscrollpage: true
+URxvt.bufferd: true
+
+! Fonts
+URxvt.font: xft:JetBrainsMono Nerd Font:size=12:antialias=true:hinting=true,xft:Symbola,xft:UbuntuMonoDerivativePowerline Nerd Font
+
+URxvt.cursorblink: true
+URxvt.linespace: 0
+URxvt.letterspace: -1 
+URxvt.urgentonbell: true
+! URxvt extension 
+URxvt.perl-ext:
+URxvt.perl-ext-common: default,clipboard,selection-to-clipboard,url-select,resize-font
+
+URxvt.colorul: #879C00
+
+! xTerm
+XTerm*termName:               xterm-256color
+XTerm*vt100.locale:           true
+XTerm*vt100.metaSendsEscape:  true
+XTerm*vt100.backarrowKey:     false
+XTerm*ttyModes:               erase ^?
+XTerm*vt100.saveLines:        4096
+XTerm*vt100.geometry:         100x32
+XTerm*vt100.translations:     #override \n\
+                              Ctrl <Key> minus: smaller-vt-font() \n\
+                              Ctrl <Key> plus: larger-vt-font()
+XTerm*vt100.faceName:         xos4 Terminess Powerline:size=16:antialias=true
+XTerm*vt100.boldFont:         xos4 Terminess Powerline:bold:size=16:antialias=true
+XTerm*vt100.allowTitleOps:    true
+XTerm*border:                 off
+xTerm*borderWidth:            0
+XTerm*Thickness:              0
+xTerm*loginShell:             true
+XTerm*multiScroll:            on
+XTerm*background:             #002B36

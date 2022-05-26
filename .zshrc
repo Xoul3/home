@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="bureau"
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git adb docker ruby npm perl zsh-syntax-highlighting zsh-autosuggestions zsh-completions docker docker-compose docker-machine sudo golang gh rust node python rails tmux z vi-mode yarn git-flow)
+plugins=(git adb docker ruby npm zsh-syntax-highlighting zsh-autosuggestions zsh-completions docker docker-compose docker-machine sudo golang rust node python rails vi-mode yarn git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -28,7 +28,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export TERMINAL='st'
 export READER='zathura'
-export BROWSER='min'
+export BROWSER='icecat-bin'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -36,13 +36,12 @@ export BROWSER='min'
 alias reload="source ~/.zshrc"
 alias :q="exit"
 alias find="fd"
+alias ll="ls -la"
 alias grep="rg"
 alias vim="nvim"
 alias top="htop"
 alias n="\nvim"
-alias e="ranger"
+alias e="lf"
 alias rm="rm -dfr"
-alias cfgi3="n ~/.config/i3/config"
-alias cfgpbar="n ~/.config/polybar/config.ini"
-alias cfgbsp="n ~/.config/bspwm/bspwmrc"
 alias p="feh"
+alias c="clear"
