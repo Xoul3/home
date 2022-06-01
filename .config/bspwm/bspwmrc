@@ -1,27 +1,20 @@
 #!/bin/sh
-
-# ----- autostart -----
-
 # sxhkd
 pgrep -x sxhkd > /dev/null || sxhkd &
 # dunst
 /usr/bin/dunst &
-# geoclue agent
-/usr/lib/geoclue-2.0/demos/agent &
 # flameshot
 flameshot &
 # polybar
-${HOME}/.config/polybar/launch.sh &
-# check for updates
-${HOME}/.local/bin/checkupdate &
+polybar &
 
-# ----- config -----
+xrandr --output HDMI-1 --mode 2560x1440 --rate 60.00 --rotate normal
 
-bspc monitor -d I II III IV V VI VII
+bspc monitor -d 1 2 3 4 5 6 7  
 
-bspc config border_radius		8
-bspc config border_width        4
-bspc config window_gap          12
+bspc config border_radius		10
+bspc config border_width        2
+bspc config window_gap          10
 
 bspc config top_padding			-5
 bspc config bottom_padding		0
@@ -38,24 +31,12 @@ bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 
-# ----- colors -----
-. "${HOME}/.cache/wal/colors.sh"
-
-bspc config normal_border_color "$color8"
-bspc config active_border_color "$color13"
+bspc config normal_border_color "#9caca4"
+bspc config active_border_color "#F3B3A7"
 bspc config focused_border_color "#CFFFE9"
-bspc config presel_feedback_color "$color11"
+bspc config presel_feedback_color "#FFA79E"
 
-# ----- window rules -----
-
-bspc rule -a *:*:oneko layer=above
-bspc rule -a kitty:*:* layer=below
-bspc rule -a pavucontrol state=floating follow=on
-bspc rule -a timeshift-gtk state=floating follow=on
-
-bspc rule -a Gimp desktop='^5' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-
+bspc rule -a Steam desktop='^5' state=floating
+bspc rule -a Krita desktop='^4' state=floating follow=on
+bspc rule -a Librewolf desktop='^3' state=floating
+bspc rule -a alacritty state=floating
