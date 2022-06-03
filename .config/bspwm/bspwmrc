@@ -7,6 +7,10 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 flameshot &
 # polybar
 polybar &
+# wallpaper
+feh --bg-fill --no-fehbg ~/.wall/w1.png &
+# eww
+$home/.local/bin/eww -c $home/.config/eww/bar --restart open bar &
 
 xrandr --output HDMI-1 --mode 2560x1440 --rate 60.00 --rotate normal
 
@@ -40,3 +44,4 @@ bspc rule -a Steam desktop='^5' state=floating
 bspc rule -a Krita desktop='^4' state=floating follow=on
 bspc rule -a Librewolf desktop='^3' state=floating
 bspc rule -a alacritty state=floating
+bspc rule -a kotatogram-desktop desktop='^2' state=floating

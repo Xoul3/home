@@ -4,11 +4,7 @@
 
 # terminal emulator
 super + Return
-    st	
-
-# program launcher Dmenu
-super + d
-	dmenu_run
+    alacritty	
 
 # Rofi launcher
 ctrl + space
